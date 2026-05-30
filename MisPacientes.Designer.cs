@@ -1,180 +1,197 @@
 ﻿namespace Fase_1_C_
 {
-    partial class MisPacientes
-    {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+	// Token: 0x0200000A RID: 10
+	public partial class MisPacientes : global::System.Windows.Forms.Form
+	{
+		// Token: 0x06000074 RID: 116 RVA: 0x0000C8A8 File Offset: 0x0000AAA8
+		protected override void Dispose(bool disposing)
+		{
+			bool flag = disposing && this.components != null;
+			if (flag)
+			{
+				this.components.Dispose();
+			}
+			base.Dispose(disposing);
+		}
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+		// Token: 0x06000075 RID: 117 RVA: 0x0000C8E0 File Offset: 0x0000AAE0
+		private void InitializeComponent()
+		{
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			global::System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new global::System.Windows.Forms.DataGridViewCellStyle();
+			this.btningresar = new global::ReaLTaiizor.Controls.Button();
+			this.btncancelar = new global::ReaLTaiizor.Controls.Button();
+			this.dgvmispacientes = new global::ReaLTaiizor.Controls.PoisonDataGridView();
+			this.parrotGradientPanel1 = new global::ReaLTaiizor.Controls.ParrotGradientPanel();
+			this.label1 = new global::System.Windows.Forms.Label();
+			this.label2 = new global::System.Windows.Forms.Label();
+			this.txtobservaciones = new global::ReaLTaiizor.Controls.DungeonRichTextBox();
+			((global::System.ComponentModel.ISupportInitialize)this.dgvmispacientes).BeginInit();
+			this.parrotGradientPanel1.SuspendLayout();
+			base.SuspendLayout();
+			this.btningresar.BackColor = global::System.Drawing.Color.Transparent;
+			this.btningresar.BorderColor = global::System.Drawing.Color.Black;
+			this.btningresar.EnteredBorderColor = global::System.Drawing.Color.FromArgb(165, 37, 37);
+			this.btningresar.EnteredColor = global::System.Drawing.Color.FromArgb(32, 34, 37);
+			this.btningresar.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 12f);
+			this.btningresar.Image = null;
+			this.btningresar.ImageAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
+			this.btningresar.InactiveColor = global::System.Drawing.Color.MediumOrchid;
+			this.btningresar.Location = new global::System.Drawing.Point(1222, 566);
+			this.btningresar.Name = "btningresar";
+			this.btningresar.PressedBorderColor = global::System.Drawing.Color.DeepSkyBlue;
+			this.btningresar.PressedColor = global::System.Drawing.Color.DeepSkyBlue;
+			this.btningresar.Size = new global::System.Drawing.Size(120, 40);
+			this.btningresar.TabIndex = 77;
+			this.btningresar.Text = "Guardar";
+			this.btningresar.TextAlignment = global::System.Drawing.StringAlignment.Center;
+			this.btningresar.Click += new global::System.EventHandler(this.btningresar_Click);
+			this.btncancelar.BackColor = global::System.Drawing.Color.Transparent;
+			this.btncancelar.BorderColor = global::System.Drawing.Color.Black;
+			this.btncancelar.EnteredBorderColor = global::System.Drawing.Color.FromArgb(165, 37, 37);
+			this.btncancelar.EnteredColor = global::System.Drawing.Color.FromArgb(32, 34, 37);
+			this.btncancelar.Font = new global::System.Drawing.Font("Microsoft Sans Serif", 12f);
+			this.btncancelar.Image = null;
+			this.btncancelar.ImageAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
+			this.btncancelar.InactiveColor = global::System.Drawing.Color.LightCoral;
+			this.btncancelar.Location = new global::System.Drawing.Point(1222, 631);
+			this.btncancelar.Name = "btncancelar";
+			this.btncancelar.PressedBorderColor = global::System.Drawing.Color.DeepSkyBlue;
+			this.btncancelar.PressedColor = global::System.Drawing.Color.DeepSkyBlue;
+			this.btncancelar.Size = new global::System.Drawing.Size(120, 40);
+			this.btncancelar.TabIndex = 76;
+			this.btncancelar.Text = "Volver";
+			this.btncancelar.TextAlignment = global::System.Drawing.StringAlignment.Center;
+			this.btncancelar.Click += new global::System.EventHandler(this.btncancelar_Click);
+			this.dgvmispacientes.AllowUserToResizeRows = false;
+			this.dgvmispacientes.BackgroundColor = global::System.Drawing.Color.FromArgb(255, 255, 255);
+			this.dgvmispacientes.BorderStyle = global::System.Windows.Forms.BorderStyle.None;
+			this.dgvmispacientes.CellBorderStyle = global::System.Windows.Forms.DataGridViewCellBorderStyle.None;
+			this.dgvmispacientes.ColumnHeadersBorderStyle = global::System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+			dataGridViewCellStyle.Alignment = global::System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle.BackColor = global::System.Drawing.Color.FromArgb(0, 174, 219);
+			dataGridViewCellStyle.Font = new global::System.Drawing.Font("Segoe UI", 11f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Pixel);
+			dataGridViewCellStyle.ForeColor = global::System.Drawing.Color.FromArgb(255, 255, 255);
+			dataGridViewCellStyle.SelectionBackColor = global::System.Drawing.Color.FromArgb(0, 198, 247);
+			dataGridViewCellStyle.SelectionForeColor = global::System.Drawing.Color.FromArgb(17, 17, 17);
+			dataGridViewCellStyle.WrapMode = global::System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvmispacientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle;
+			this.dgvmispacientes.ColumnHeadersHeightSizeMode = global::System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			dataGridViewCellStyle2.Alignment = global::System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle2.BackColor = global::System.Drawing.Color.FromArgb(255, 255, 255);
+			dataGridViewCellStyle2.Font = new global::System.Drawing.Font("Segoe UI", 11f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Pixel);
+			dataGridViewCellStyle2.ForeColor = global::System.Drawing.Color.FromArgb(136, 136, 136);
+			dataGridViewCellStyle2.SelectionBackColor = global::System.Drawing.Color.FromArgb(0, 198, 247);
+			dataGridViewCellStyle2.SelectionForeColor = global::System.Drawing.Color.FromArgb(17, 17, 17);
+			dataGridViewCellStyle2.WrapMode = global::System.Windows.Forms.DataGridViewTriState.False;
+			this.dgvmispacientes.DefaultCellStyle = dataGridViewCellStyle2;
+			this.dgvmispacientes.EnableHeadersVisualStyles = false;
+			this.dgvmispacientes.Font = new global::System.Drawing.Font("Segoe UI", 11f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Pixel);
+			this.dgvmispacientes.GridColor = global::System.Drawing.Color.White;
+			this.dgvmispacientes.Location = new global::System.Drawing.Point(31, 95);
+			this.dgvmispacientes.Name = "dgvmispacientes";
+			this.dgvmispacientes.RowHeadersBorderStyle = global::System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+			dataGridViewCellStyle3.Alignment = global::System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle3.BackColor = global::System.Drawing.Color.FromArgb(0, 174, 219);
+			dataGridViewCellStyle3.Font = new global::System.Drawing.Font("Segoe UI", 11f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Pixel);
+			dataGridViewCellStyle3.ForeColor = global::System.Drawing.Color.FromArgb(255, 255, 255);
+			dataGridViewCellStyle3.SelectionBackColor = global::System.Drawing.Color.FromArgb(0, 198, 247);
+			dataGridViewCellStyle3.SelectionForeColor = global::System.Drawing.Color.FromArgb(17, 17, 17);
+			dataGridViewCellStyle3.WrapMode = global::System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvmispacientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+			this.dgvmispacientes.RowHeadersWidthSizeMode = global::System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+			this.dgvmispacientes.SelectionMode = global::System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+			this.dgvmispacientes.Size = new global::System.Drawing.Size(1365, 366);
+			this.dgvmispacientes.TabIndex = 75;
+			this.dgvmispacientes.CellPainting += new global::System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvmispacientes_CellPainting);
+			this.parrotGradientPanel1.BottomLeft = global::System.Drawing.Color.Indigo;
+			this.parrotGradientPanel1.BottomRight = global::System.Drawing.Color.MediumSlateBlue;
+			this.parrotGradientPanel1.CompositingQualityType = global::System.Drawing.Drawing2D.CompositingQuality.HighSpeed;
+			this.parrotGradientPanel1.Controls.Add(this.label1);
+			this.parrotGradientPanel1.InterpolationType = global::System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
+			this.parrotGradientPanel1.Location = new global::System.Drawing.Point(-15, 1);
+			this.parrotGradientPanel1.Name = "parrotGradientPanel1";
+			this.parrotGradientPanel1.PixelOffsetType = global::System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+			this.parrotGradientPanel1.PrimerColor = global::System.Drawing.Color.White;
+			this.parrotGradientPanel1.Size = new global::System.Drawing.Size(1473, 66);
+			this.parrotGradientPanel1.SmoothingType = global::System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+			this.parrotGradientPanel1.Style = global::ReaLTaiizor.Controls.ParrotGradientPanel.GradientStyle.Corners;
+			this.parrotGradientPanel1.TabIndex = 74;
+			this.parrotGradientPanel1.TextRenderingType = global::System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+			this.parrotGradientPanel1.TopLeft = global::System.Drawing.Color.DeepSkyBlue;
+			this.parrotGradientPanel1.TopRight = global::System.Drawing.Color.Fuchsia;
+			this.label1.AutoSize = true;
+			this.label1.BackColor = global::System.Drawing.Color.Transparent;
+			this.label1.Font = new global::System.Drawing.Font("Century Gothic", 20.25f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point, 0);
+			this.label1.ForeColor = global::System.Drawing.Color.White;
+			this.label1.Location = new global::System.Drawing.Point(639, 14);
+			this.label1.Name = "label1";
+			this.label1.Size = new global::System.Drawing.Size(192, 33);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "Mis Pacientes";
+			this.label2.AutoSize = true;
+			this.label2.Font = new global::System.Drawing.Font("Segoe UI Semibold", 12f, global::System.Drawing.FontStyle.Bold, global::System.Drawing.GraphicsUnit.Point, 0);
+			this.label2.Location = new global::System.Drawing.Point(31, 483);
+			this.label2.Name = "label2";
+			this.label2.Size = new global::System.Drawing.Size(122, 21);
+			this.label2.TabIndex = 78;
+			this.label2.Text = "Observaciones:";
+			this.txtobservaciones.AutoWordSelection = false;
+			this.txtobservaciones.BackColor = global::System.Drawing.Color.Transparent;
+			this.txtobservaciones.BorderColor = global::System.Drawing.Color.FromArgb(180, 180, 180);
+			this.txtobservaciones.EdgeColor = global::System.Drawing.Color.White;
+			this.txtobservaciones.Font = new global::System.Drawing.Font("Tahoma", 10f);
+			this.txtobservaciones.ForeColor = global::System.Drawing.Color.FromArgb(76, 76, 76);
+			this.txtobservaciones.Location = new global::System.Drawing.Point(31, 514);
+			this.txtobservaciones.Name = "txtobservaciones";
+			this.txtobservaciones.ReadOnly = false;
+			this.txtobservaciones.Size = new global::System.Drawing.Size(1101, 229);
+			this.txtobservaciones.TabIndex = 80;
+			this.txtobservaciones.Text = "Escriba las observaciones del paciente o prescripciones";
+			this.txtobservaciones.TextBackColor = global::System.Drawing.Color.White;
+			this.txtobservaciones.WordWrap = true;
+			this.txtobservaciones.Enter += new global::System.EventHandler(this.txtobservaciones_Enter);
+			base.AutoScaleDimensions = new global::System.Drawing.SizeF(7f, 15f);
+			base.AutoScaleMode = global::System.Windows.Forms.AutoScaleMode.Font;
+			base.ClientSize = new global::System.Drawing.Size(1443, 806);
+			base.Controls.Add(this.txtobservaciones);
+			base.Controls.Add(this.label2);
+			base.Controls.Add(this.btningresar);
+			base.Controls.Add(this.btncancelar);
+			base.Controls.Add(this.dgvmispacientes);
+			base.Controls.Add(this.parrotGradientPanel1);
+			base.Name = "MisPacientes";
+			this.Text = "MisPacientes";
+			((global::System.ComponentModel.ISupportInitialize)this.dgvmispacientes).EndInit();
+			this.parrotGradientPanel1.ResumeLayout(false);
+			this.parrotGradientPanel1.PerformLayout();
+			base.ResumeLayout(false);
+			base.PerformLayout();
+		}
 
-        #region Windows Form Designer generated code
+		// Token: 0x04000095 RID: 149
+		private global::System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            btningresar = new ReaLTaiizor.Controls.Button();
-            btncancelar = new ReaLTaiizor.Controls.Button();
-            dgvtriaje = new ReaLTaiizor.Controls.PoisonDataGridView();
-            parrotGradientPanel1 = new ReaLTaiizor.Controls.ParrotGradientPanel();
-            label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dgvtriaje).BeginInit();
-            parrotGradientPanel1.SuspendLayout();
-            SuspendLayout();
-            // 
-            // btningresar
-            // 
-            btningresar.BackColor = Color.Transparent;
-            btningresar.BorderColor = Color.Black;
-            btningresar.EnteredBorderColor = Color.FromArgb(165, 37, 37);
-            btningresar.EnteredColor = Color.FromArgb(32, 34, 37);
-            btningresar.Font = new Font("Microsoft Sans Serif", 12F);
-            btningresar.Image = null;
-            btningresar.ImageAlign = ContentAlignment.MiddleLeft;
-            btningresar.InactiveColor = Color.MediumOrchid;
-            btningresar.Location = new Point(1194, 276);
-            btningresar.Name = "btningresar";
-            btningresar.PressedBorderColor = Color.DeepSkyBlue;
-            btningresar.PressedColor = Color.DeepSkyBlue;
-            btningresar.Size = new Size(120, 40);
-            btningresar.TabIndex = 77;
-            btningresar.Text = "Guardar";
-            btningresar.TextAlignment = StringAlignment.Center;
-            // 
-            // btncancelar
-            // 
-            btncancelar.BackColor = Color.Transparent;
-            btncancelar.BorderColor = Color.Black;
-            btncancelar.EnteredBorderColor = Color.FromArgb(165, 37, 37);
-            btncancelar.EnteredColor = Color.FromArgb(32, 34, 37);
-            btncancelar.Font = new Font("Microsoft Sans Serif", 12F);
-            btncancelar.Image = null;
-            btncancelar.ImageAlign = ContentAlignment.MiddleLeft;
-            btncancelar.InactiveColor = Color.LightCoral;
-            btncancelar.Location = new Point(1194, 341);
-            btncancelar.Name = "btncancelar";
-            btncancelar.PressedBorderColor = Color.DeepSkyBlue;
-            btncancelar.PressedColor = Color.DeepSkyBlue;
-            btncancelar.Size = new Size(120, 40);
-            btncancelar.TabIndex = 76;
-            btncancelar.Text = "Volver";
-            btncancelar.TextAlignment = StringAlignment.Center;
-            // 
-            // dgvtriaje
-            // 
-            dgvtriaje.AllowUserToResizeRows = false;
-            dgvtriaje.BackgroundColor = Color.FromArgb(255, 255, 255);
-            dgvtriaje.BorderStyle = BorderStyle.None;
-            dgvtriaje.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            dgvtriaje.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvtriaje.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dgvtriaje.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = Color.FromArgb(136, 136, 136);
-            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            dgvtriaje.DefaultCellStyle = dataGridViewCellStyle2;
-            dgvtriaje.EnableHeadersVisualStyles = false;
-            dgvtriaje.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dgvtriaje.GridColor = Color.White;
-            dgvtriaje.Location = new Point(21, 157);
-            dgvtriaje.Name = "dgvtriaje";
-            dgvtriaje.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            dgvtriaje.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            dgvtriaje.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dgvtriaje.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvtriaje.Size = new Size(1089, 581);
-            dgvtriaje.TabIndex = 75;
-            // 
-            // parrotGradientPanel1
-            // 
-            parrotGradientPanel1.BottomLeft = Color.Indigo;
-            parrotGradientPanel1.BottomRight = Color.MediumSlateBlue;
-            parrotGradientPanel1.CompositingQualityType = System.Drawing.Drawing2D.CompositingQuality.HighSpeed;
-            parrotGradientPanel1.Controls.Add(label1);
-            parrotGradientPanel1.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
-            parrotGradientPanel1.Location = new Point(-15, 1);
-            parrotGradientPanel1.Name = "parrotGradientPanel1";
-            parrotGradientPanel1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            parrotGradientPanel1.PrimerColor = Color.White;
-            parrotGradientPanel1.Size = new Size(1473, 66);
-            parrotGradientPanel1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            parrotGradientPanel1.Style = ReaLTaiizor.Controls.ParrotGradientPanel.GradientStyle.Corners;
-            parrotGradientPanel1.TabIndex = 74;
-            parrotGradientPanel1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            parrotGradientPanel1.TopLeft = Color.DeepSkyBlue;
-            parrotGradientPanel1.TopRight = Color.Fuchsia;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(639, 14);
-            label1.Name = "label1";
-            label1.Size = new Size(192, 33);
-            label1.TabIndex = 0;
-            label1.Text = "Mis Pacientes";
-            // 
-            // MisPacientes
-            // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1443, 806);
-            Controls.Add(btningresar);
-            Controls.Add(btncancelar);
-            Controls.Add(dgvtriaje);
-            Controls.Add(parrotGradientPanel1);
-            Name = "MisPacientes";
-            Text = "MisPacientes";
-            ((System.ComponentModel.ISupportInitialize)dgvtriaje).EndInit();
-            parrotGradientPanel1.ResumeLayout(false);
-            parrotGradientPanel1.PerformLayout();
-            ResumeLayout(false);
-        }
+		// Token: 0x04000096 RID: 150
+		private global::ReaLTaiizor.Controls.Button btningresar;
 
-        #endregion
+		// Token: 0x04000097 RID: 151
+		private global::ReaLTaiizor.Controls.Button btncancelar;
 
-        private ReaLTaiizor.Controls.Button btningresar;
-        private ReaLTaiizor.Controls.Button btncancelar;
-        private ReaLTaiizor.Controls.PoisonDataGridView dgvtriaje;
-        private ReaLTaiizor.Controls.ParrotGradientPanel parrotGradientPanel1;
-        private Label label1;
-    }
+		// Token: 0x04000098 RID: 152
+		private global::ReaLTaiizor.Controls.PoisonDataGridView dgvmispacientes;
+
+		// Token: 0x04000099 RID: 153
+		private global::ReaLTaiizor.Controls.ParrotGradientPanel parrotGradientPanel1;
+
+		// Token: 0x0400009A RID: 154
+		private global::System.Windows.Forms.Label label1;
+
+		// Token: 0x0400009B RID: 155
+		private global::System.Windows.Forms.Label label2;
+
+		// Token: 0x0400009C RID: 156
+		private global::ReaLTaiizor.Controls.DungeonRichTextBox txtobservaciones;
+	}
 }
